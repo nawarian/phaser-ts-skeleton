@@ -14,7 +14,7 @@
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",
     "dev": "webpack --mode development && webpack serve --mode development",
-    "format": "prettier --write --config .prettierrc src/**/*.ts src/*.ts"
+    "format": "prettier --write --config .prettierrc *.js src/**/*.ts src/*.ts"
   },
   "author": "Níckolas Da Silva <nickolas@phpsp.org.br>",
   "engines": {
@@ -24,6 +24,7 @@
     "phaser": "^3.55.2"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
     "html-webpack-plugin": "^5.5.0",
     "prettier": "^2.8.4",
     "ts-loader": "^9.4.2",
