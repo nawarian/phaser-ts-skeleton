@@ -10,8 +10,8 @@ export class Game extends Phaser.Game {
 
 window.addEventListener('load', () => {
 	const cfg: Phaser.Types.Core.GameConfig = {
-		width: 320,
-		height: 240,
+		width: 375,
+		height: 812,
 		type: Phaser.AUTO,
 		parent: 'game',
 		scene: [BootScene, GameScene],
@@ -24,10 +24,10 @@ window.addEventListener('load', () => {
 				gravity: {
 					y: 1000,
 				},
-				debug: true,
+				debug: false,
 			},
 		},
-		backgroundColor: '#ccc',
+		backgroundColor: '#222',
 		render: {
 			pixelArt: true,
 			antialias: false,

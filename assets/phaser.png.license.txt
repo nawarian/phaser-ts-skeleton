@@ -1,4 +1,0 @@
-Source: https://github.com/photonstorm/phaser3-examples/blob/master/public/assets/sprites/phaser3-logo-x2.png
-
-As noted by [the License section of phaser3-examples repository](https://github.com/photonstorm/phaser3-examples#license)
-the usage of their assets in commercial games, or games that carry advertising, is strictly forbidden.
