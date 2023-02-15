@@ -4,10 +4,17 @@
   "description": "A simple skeleton to help quickly bootstraping Phaser games with TypeScript.",
   "main": "src/game.ts",
   "license": "GPL-3.0",
-  "keywords": ["phaser", "typescript", "game", "html5", "webgl"],
+  "keywords": [
+    "phaser",
+    "typescript",
+    "game",
+    "html5",
+    "webgl"
+  ],
   "scripts": {
     "build": "webpack --mode production --config webpack.config.js",
-    "dev": "webpack --mode development && webpack serve --mode development"
+    "dev": "webpack --mode development && webpack serve --mode development",
+    "format": "prettier --write --config .prettierrc src/**/*.ts src/*.ts"
   },
   "author": "Níckolas Da Silva <nickolas@phpsp.org.br>",
   "engines": {
@@ -18,6 +25,7 @@
   },
   "devDependencies": {
     "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.8.4",
     "ts-loader": "^9.4.2",
     "typescript": "^4.9.5",
     "webpack": "^5.75.0",

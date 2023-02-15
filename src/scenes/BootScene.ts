@@ -1,11 +1,11 @@
 export class BootScene extends Phaser.Scene {
-  constructor() {
-    super({ key: 'BootScene' });
-  }
+	constructor() {
+		super({ key: 'BootScene' });
+	}
 
-  preload(): void {}
+	preload(): void {}
 
-  update(): void {
-    this.scene.start('GameScene');
-  }
+	update(): void {
+		this.scene.start('GameScene');
+	}
 }

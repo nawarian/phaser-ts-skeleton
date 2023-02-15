@@ -1,13 +1,13 @@
 export class GameScene extends Phaser.Scene {
-  constructor() {
-    super({ key: 'GameScene' });
-  }
+	constructor() {
+		super({ key: 'GameScene' });
+	}
 
-  init(): void {}
+	init(): void {}
 
-  create(): void {}
+	create(): void {}
 
-  preload(): void {}
+	preload(): void {}
 
-  update(): void {}
+	update(): void {}
 }
