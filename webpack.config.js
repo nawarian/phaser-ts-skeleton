@@ -9,10 +9,7 @@ const htmlPluginCfg = new htmlPlugin({
 });
 
 const copyPluginCfg = new copyPlugin({
-  patterns: [
-    { from: 'assets/*.png', to: 'assets/[name].png' },
-    { from: 'maps/*.json', to: 'maps/[name].json' },
-  ],
+  patterns: [{ from: 'maps/*.json', to: 'maps/[name].json' }],
 });
 
 module.exports = {
@@ -23,6 +20,13 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|svg)/i,
+        loader: 'file-loader',
+        options: {
+          name: 'assets/[name].[ext]',
+        },
+      },
       {
         test: /\.ts$/,
         include: path.resolve(__dirname, 'src'),
