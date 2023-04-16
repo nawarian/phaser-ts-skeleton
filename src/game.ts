@@ -1,6 +1,6 @@
 import 'phaser';
-import { BootScene } from './scenes/BootScene';
-import { GameScene } from './scenes/GameScene';
+import { BootScene } from '@scenes/BootScene';
+import { GameScene } from '@scenes/GameScene';
 
 export class Game extends Phaser.Game {
   constructor(config: Phaser.Types.Core.GameConfig) {

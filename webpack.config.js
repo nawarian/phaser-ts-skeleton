@@ -1,6 +1,7 @@
 const path = require('path');
 const htmlPlugin = require('html-webpack-plugin');
 const copyPlugin = require('copy-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const htmlPluginCfg = new htmlPlugin({
   template: path.resolve(__dirname, 'index.html'),
@@ -11,6 +12,8 @@ const htmlPluginCfg = new htmlPlugin({
 const copyPluginCfg = new copyPlugin({
   patterns: [{ from: 'maps/*.json', to: 'maps/[name].json' }],
 });
+
+const tsconfigPathsPluginCfg = new TsconfigPathsPlugin();
 
 module.exports = {
   entry: './src/game.ts',
@@ -55,5 +58,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    plugins: [tsconfigPathsPluginCfg],
   },
 };
