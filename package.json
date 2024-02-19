@@ -21,7 +21,7 @@
     "node": "^16.19.0"
   },
   "dependencies": {
-    "phaser": "^3.55.2"
+    "phaser": "^3.70.0"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",

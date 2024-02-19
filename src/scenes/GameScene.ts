@@ -8,17 +8,17 @@ export class GameScene extends Phaser.Scene {
   init(): void {}
 
   create(): void {
-    const particles = this.add.particles('particle');
-
     const phaser = PhaserImg.create(this, 400, 100);
 
-    const emitter = particles.createEmitter({
-      speed: 100,
+    const particles = this.add.particles();
+    particles.setConfig({
+      texture: 'particle',
       scale: { start: 1, end: 0 },
+      speed: 100,
       blendMode: 'ADD',
     });
 
-    emitter.startFollow(phaser);
+    particles.startFollow(phaser);
   }
 
   preload(): void {}
